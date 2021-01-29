@@ -23,6 +23,7 @@ public class MainView extends HorizontalLayout {
         Button authorList = new Button("Author List");
         authorList.addClickListener(buttonClickEvent -> Notification.show("This page doesn't exists."));
         add(authorList);
+
         Button addAuthor = new Button("Add Author");
         addAuthor.addClickListener(buttonClickEvent -> Notification.show("This page doesn't exists."));
         add(addAuthor);

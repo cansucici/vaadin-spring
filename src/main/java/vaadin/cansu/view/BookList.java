@@ -8,8 +8,6 @@ import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 import vaadin.cansu.model.entities.Book;
 import vaadin.cansu.service.impl.BookService;
-
-import java.util.ArrayList;
 import java.util.List;
 
 @Route("bookList")
@@ -25,6 +23,7 @@ public class BookList extends VerticalLayout {
         add(homeButton);
 
         List<Book> getBooks = bookService.getAllBooks();
+
         Grid<Book> grid = new Grid<>(Book.class);
         grid.setItems(getBooks);
 
